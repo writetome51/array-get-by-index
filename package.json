@@ -1,0 +1,21 @@
+{
+  "name": "@writetome51/array-get-item",
+  "version": "1.0.0",
+  "description": "Simply returns 1 item from the array",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "manipulation",
+    "return",
+    "data"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@writetome51/array-and-index-validation": "latest"
+  }
+}
