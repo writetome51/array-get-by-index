@@ -1,19 +1,30 @@
 {
-  "name": "@writetome51/array-get-item",
+  "name": "@writetome51/array-get-by-index",
   "version": "1.0.0",
-  "description": "Simply returns 1 item from the array",
-  "main": "",
+  "description": "Returns 1 item from array, accessed by its index.  Does not modify array",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/array-get-by-index.git"
+  },
+
   "keywords": [
     "array",
     "manipulation",
+    "get",
+    "item",
     "return",
     "data"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/array-get-by-index/issues"
+  },
+  "homepage": "https://github.com/writetome51/array-get-by-index#readme",
   "devDependencies": {},
   "dependencies": {
     "@writetome51/array-and-index-validation": "latest"

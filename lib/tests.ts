@@ -1,66 +1,66 @@
-import { getItem } from './getItem';
+import { getByIndex } from '../index';
 
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Test 1: index of -1 should return last item of array, and array should not be modified:
-let result = getItem(-1, arr);
+let result = getByIndex(-1, arr);
 if (result === 10 && arr.length === 10) console.log('test 1 passed');
-else console.log('test 1 failed.');
+else console.log('test 1 FAILED.');
 
 
 // Test 2: index of 0 should return first item of array:
-result = getItem(0, arr);
-if (result === 1) console.log('test 2 passed');
-else console.log('test 2 failed.');
+result = getByIndex(0, arr);
+if (result === 1 && arr.length === 10) console.log('test 2 passed');
+else console.log('test 2 FAILED.');
 
 
 // Test 3: positive index exceeding array's range should trigger error:
 let triggeredError = false;
 try{
-	result = getItem(10, arr);
+	result = getByIndex(10, arr);
 }
 catch (e) {
 	triggeredError = true;
 }
 if (triggeredError) console.log('test 3 passed');
-else console.log('test 3 failed.');
+else console.log('test 3 FAILED.');
 
 
 // Test 4: negative index exceeding array's range should trigger error:
 triggeredError = false;
 try{
-	result = getItem(-11, arr);
+	result = getByIndex(-11, arr);
 }
 catch (e) {
 	triggeredError = true;
 }
 if (triggeredError) console.log('test 4 passed');
-else console.log('test 4 failed.');
+else console.log('test 4 FAILED.');
 
 
 
 // Test 5: if something other than integer is passed as index, it should trigger error:
 triggeredError = false;
 try{
-	result = getItem(1.02, arr);
+	result = getByIndex(1.02, arr);
 	console.log(result);
 }
 catch (e) {
 	triggeredError = true;
 }
 if (triggeredError) console.log('test 5 passed');
-else console.log('test 5 failed.');
+else console.log('test 5 FAILED.');
 
 
 // Test 6: if something other than array is passed as second arg, it should trigger error:
 triggeredError = false;
 try{
-	result = getItem(0, {1:0});
+	result = getByIndex(0, {1:0});
 	console.log(result);
 }
 catch (e) {
 	triggeredError = true;
 }
 if (triggeredError) console.log('test 6 passed');
-else console.log('test 6 failed.');
+else console.log('test 6 FAILED.');

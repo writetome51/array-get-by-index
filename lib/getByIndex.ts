@@ -4,7 +4,7 @@ import { errorIfIndexNotValid }
 
 // index can be negative or positive.
 
-export function getItem(index, array): any {
+export function getByIndex(index, array): any {
 	errorIfIndexNotValid(index, array); // Validates both index and array.
 	if (index < 0) {
 		return array[array.length + index];
