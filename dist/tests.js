@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var getByIndex_1 = require("./getByIndex");
+var index_1 = require("./index");
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Test 1: index of -1 should return last item of array, and array should not be modified:
-var result = getByIndex_1.getByIndex(-1, arr);
+var result = index_1.getByIndex(-1, arr);
 if (result === 10 && arr.length === 10)
     console.log('test 1 passed');
 else
     console.log('test 1 FAILED.');
 // Test 2: index of 0 should return first item of array:
-result = getByIndex_1.getByIndex(0, arr);
+result = index_1.getByIndex(0, arr);
 if (result === 1 && arr.length === 10)
     console.log('test 2 passed');
 else
@@ -17,7 +17,7 @@ else
 // Test 3: positive index exceeding array's range should trigger error:
 var triggeredError = false;
 try {
-    result = getByIndex_1.getByIndex(10, arr);
+    result = index_1.getByIndex(10, arr);
 }
 catch (e) {
     triggeredError = true;
@@ -29,7 +29,7 @@ else
 // Test 4: negative index exceeding array's range should trigger error:
 triggeredError = false;
 try {
-    result = getByIndex_1.getByIndex(-11, arr);
+    result = index_1.getByIndex(-11, arr);
 }
 catch (e) {
     triggeredError = true;
@@ -41,7 +41,7 @@ else
 // Test 5: if something other than integer is passed as index, it should trigger error:
 triggeredError = false;
 try {
-    result = getByIndex_1.getByIndex(1.02, arr);
+    result = index_1.getByIndex(1.02, arr);
     console.log(result);
 }
 catch (e) {
@@ -54,7 +54,7 @@ else
 // Test 6: if something other than array is passed as second arg, it should trigger error:
 triggeredError = false;
 try {
-    result = getByIndex_1.getByIndex(0, { 1: 0 });
+    result = index_1.getByIndex(0, { 1: 0 });
     console.log(result);
 }
 catch (e) {
