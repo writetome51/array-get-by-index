@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-by-index",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Returns 1 item from array, accessed by its index.  Does not modify array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
