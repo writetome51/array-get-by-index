@@ -16,11 +16,11 @@ getByIndex(-7, arr); // --> 1
 
 getByIndex(-8, arr);
 // Error: "The entered index is not valid.  Whether positive or negative,
-           it exceeds the index range of the array."
+//          it exceeds the index range of the array."
 
 getByIndex(7, arr);
 // Error: "The entered index is not valid.  Whether positive or negative,
-           it exceeds the index range of the array."
+//          it exceeds the index range of the array."
 ```
 
 ## Installation
