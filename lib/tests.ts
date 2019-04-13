@@ -15,6 +15,18 @@ if (result === 1 && arr.length === 10) console.log('test 2 passed');
 else console.log('test 2 FAILED.');
 
 
+// Test 2A: index of 9 should return last item of array:
+result = getByIndex(9, arr);
+if (result === 10 && arr.length === 10) console.log('test 2A passed');
+else console.log('test 2A FAILED.');
+
+
+// Test 2B: index of -10 should return first item of array:
+result = getByIndex(-10, arr);
+if (result === 1 && arr.length === 10) console.log('test 2B passed');
+else console.log('test 2B FAILED.');
+
+
 // Test 3: positive index exceeding array's range should trigger error:
 let triggeredError = false;
 try{
@@ -44,7 +56,6 @@ else console.log('test 4 FAILED.');
 triggeredError = false;
 try{
 	result = getByIndex(1.02, arr);
-	console.log(result);
 }
 catch (e) {
 	triggeredError = true;
@@ -57,7 +68,6 @@ else console.log('test 5 FAILED.');
 triggeredError = false;
 try{
 	result = getByIndex(0, {1:0});
-	console.log(result);
 }
 catch (e) {
 	triggeredError = true;

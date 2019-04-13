@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-by-index",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Returns 1 item from array, accessed by its index.  Does not modify array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,7 @@
     "manipulation",
     "get",
     "item",
+    "index",
     "return",
     "data"
   ],
@@ -27,6 +28,6 @@
   "homepage": "https://github.com/writetome51/array-get-by-index#readme",
   "devDependencies": {},
   "dependencies": {
-    "@writetome51/array-and-index-validation": "~1.0.6"
+    "error-if-index-not-valid": "~1.0.0"
   }
 }
