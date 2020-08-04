@@ -3,11 +3,7 @@
   "version": "2.0.0",
   "description": "Returns 1 item from array, accessed by its index.  Does not modify array",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/writetome51/array-get-by-index.git"
